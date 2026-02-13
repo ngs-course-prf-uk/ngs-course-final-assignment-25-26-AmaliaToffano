@@ -32,19 +32,20 @@ coordinates and PHRED quality scores.
 
 ## Repository structure
 
-luscinia-phred-analysis/n
+```text
+luscinia-phred-analysis/
 ├── workflow.sh
 ├── data-analysis.R
-├── data/n
-│ └── SelectedCols_luscinia_vars.tsv
-├── plots/n
-│ ├── genomewide/n
-│ │ └── genomewide_PHRED.pdf
-│ └── chromosomes/n
-│ ├── chr1_PHRED.pdf
-│ ├── chr2_PHRED.pdf
-│ └── ...
+├── data/
+│   └── SelectedCols_luscinia_vars.tsv
+├── plots/
+│   ├── genomewide/
+│   │   └── genomewide_PHRED.pdf
+│   └── chromosomes/
+│       ├── chr1_PHRED.pdf
+│       └── ...
 └── README.md
+```
 
 ---
 
@@ -149,5 +150,4 @@ Rscript data-analysis.R
 ```
 
 # disclaimer
-i used chatgpt to control and refine the code and to write the markdown; furthermore in the graphs i decided
-to project the x axis also on top because otherwhise the higher values would have visually covered the lower ones, i decided to keep everything and not to filter out because i wanted the script to be as universal as possible
+i used chatgpt to control and refine the code and to help write the markdown; furthermore in the graphs i decided to project the x axis also on top because otherwhise the higher values would have visually covered the lower ones, i decided to keep everything and not to filter out because i wanted the script to be as universal as possible
