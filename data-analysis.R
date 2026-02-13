@@ -45,6 +45,11 @@ pdf("plots/genomewide/genomewide_PHRED.pdf", width = 12, height = 8)
 print(plot_total)
 dev.off()
 
+# Save genome-wide plot as PNG
+png("plots/genomewide/genomewide_PHRED.png", width = 1200, height = 800, res = 150)
+print(plot_total)
+dev.off()
+
 # 7. Per-chromosome plots (NAMED LIST)
 plots_chroms <- lapply(levels(data$CHROM), function(chr) {
   df <- subset(data, CHROM == chr)

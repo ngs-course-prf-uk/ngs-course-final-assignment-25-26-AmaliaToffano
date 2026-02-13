@@ -32,15 +32,15 @@ coordinates and PHRED quality scores.
 
 ## Repository structure
 
-luscinia-phred-analysis/
+luscinia-phred-analysis/n
 ├── workflow.sh
 ├── data-analysis.R
-├── data/
+├── data/n
 │ └── SelectedCols_luscinia_vars.tsv
-├── plots/
-│ ├── genomewide/
+├── plots/n
+│ ├── genomewide/n
 │ │ └── genomewide_PHRED.pdf
-│ └── chromosomes/
+│ └── chromosomes/n
 │ ├── chr1_PHRED.pdf
 │ ├── chr2_PHRED.pdf
 │ └── ...
@@ -77,7 +77,7 @@ From the repository root directory:
 ```bash
 chmod +x workflow.sh
 ./workflow.sh
-
+```
 Data analysis and visualisation (data-analysis.R)
 
 The R script data-analysis.R loads the processed data and generates all plots
@@ -100,7 +100,7 @@ Rscript data-analysis.R
 Results
 Genome-wide PHRED quality distribution
 
-![Genome-wide PHRED quality distribution](plots/genomewide/genomewide_PHRED.pdf)
+![Genome-wide PHRED quality distribution showing variant call quality scores plotted across the entire genome, with PHRED quality scores on the y-axis and genomic position on the x-axis. Higher scores indicate more reliable variant calls.](plots/genomewide/genomewide_PHRED.png)
 
 
 The following plot shows the distribution of PHRED quality scores across the
@@ -143,9 +143,10 @@ Reproducibility
 The entire analysis can be reproduced by running a single command from the
 repository root directory and after it finishes, the R script can be launched
 
+```
 ./workflow.sh
 Rscript data-analysis.R
-
+```
 
 # disclaimer
 i used chatgpt to control and refine the code and to write the markdown; furthermore in the graphs i decided
